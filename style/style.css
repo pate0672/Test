@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  position: absolute;
+  z-index: 100;
+  font-size: 58px;
+  font-weight: bold;
+  color: rgb(224, 224, 224);
+  text-transform: uppercase;
+  top: 100px;
+  left: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
+}
+.title:hover {
+  padding: 20px;
+  font-size: 68px;
+  transform: translateY(-6px);
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#virus {
+  color: rgb(209, 56, 0);
+}
+
+.search-container {
+  border-radius: 30px;
+  position: absolute;
+  z-index: 100;
+  top: 230px;
+  left: 100px;
+  width: 400px;
+  height: 60px;
+  background-color: #d1d1d1;
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
+.search-container:hover {
+  width: 500px;
+  height: 70px;
+  transition: all 0.7s ease-in-out;
+}
+
+.search-container .search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.search-container input {
+  width: 100%;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search i {
+  font-size: 25px;
+  color: white;
+}
+
+.stores-list-container {
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8); /* fallback for old browsers */
+  left: 100px;
+  top: 320px;
+  border-radius: 30px;
+  bottom: 20px;
+  display: flex;
+  overflow-y: hidden;
+  padding-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+.stores-list-container:hover {
+  /* background-color: rgb(216, 216, 216); */
+}
+
+.store-container {
+  border-bottom: 1px solid #979797;
+  display: flex;
+}
+
+.store-info-container {
+  flex-grow: 1;
+  transition: all 0.5s ease-in-out;
+  color: wheat;
+}
+.store-info-container:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.store-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-address {
+  font-size: 21px;
+
+  margin-top: 30px;
+}
+
+.store-address span {
+  display: block;
+}
+
+.store-phone-number {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgb(133, 133, 133);
+}
+
+.store-number {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #454e53;
+  color: #b5adad;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.stores-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#storeName {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px;
+  background-color: #454e53;
+  color: white;
+  margin: 1px;
+  border-radius: 2px 2px 0 0;
+}
+#storeHours {
+  color: rgb(110, 110, 110);
+  font-size: 0.8rem;
+}
+
+a {
+  color: #454e53;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  display: block;
+  font-weight: 600;
+}
+#iconss {
+  color: #454e53;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+img[src="http://maps.gstatic.com/intl/en_us/mapfiles/iw_close.gif"] 
+{ content:url("/img/own_close_button.png"); }
+h4 {
+  color: rgb(0, 0, 0);
+  display: inline;
+  margin-left: 0.5rem;
+  font-weight: lighter;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+h5 {
+  display: inline;
+  margin-left: 0.8rem;
+  font-weight: lighter;
+  font-family: "Baloo Paaji 2", cursive;
+  font-size: 1rem;
+  font-size: 1.5rem;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+.icon {
+  height: 10px;
+}
+#map {
+  background-color: #333;
+}
